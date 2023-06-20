@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="@dimen/_20sdp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="8dp"
+            android:singleLine="true"
+            android:text="Multan Sultans won by 52 runs"
+            android:textColor="#222DA5"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/txt_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="7dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/drawable_round_corner_ractangal"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="2dp"
+            android:text="Live"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_saprater"
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_status"
+            android:background="@color/color_saprator" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_main"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/txt_status"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <ImageView
+                        android:id="@+id/img_flag_t1"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/common_full_open_on_phone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/img_flag_t1"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_name_t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="South Africa"
+
+                            android:textColor="@color/black"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/txt_score_t1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="127/5"
+
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_over_t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="36.0 ov."
+
+                            android:textColor="@color/grey"
+                            android:textSize="9sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/drawable_cricle"
+                        android:gravity="center"
+                        android:text="VS"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <ImageView
+                        android:id="@+id/img_flag_t2"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/common_full_open_on_phone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/img_flag_t2"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_name_t2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="pakistan"
+
+                            android:textColor="@color/black"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/txt_score_t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="181/10"
+
+
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_over_t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:singleLine="true"
+                            android:text="47.0 ov."
+
+                            android:textColor="@color/grey"
+                            android:textSize="9sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_main"
+            android:layout_marginVertical="7dp"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/txt_live"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_Datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2023-02-26"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+
+            <TextView
+                android:id="@+id/txt_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2023-02-26"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <!--    <View
+                    android:layout_width="@dimen/_4sdp"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/drawable_cricle"
+                    android:backgroundTint="@color/grey" />-->
+
+            <!--   <TextView
+                   android:id="@+id/txt_account_login"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:text="13:30:00"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_13sdp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/ll_datetime"
+            android:layout_marginVertical="7dp"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/txt_live"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_match_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_datetime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="Match : t20"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/txt_match_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_datetime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="City"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
